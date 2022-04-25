@@ -1,0 +1,30 @@
+.timeline{
+    width: 800px;
+    margin: 100px auto;
+    border: 1px solid red;   
+    position: relative; 
+}
+
+.timeline::after{
+    content: '';
+    background-color: blue;
+    position: absolute;
+    width: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+
+.item {
+    background-color: orange;
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+/* marginleft,right에50% 주거나 부모에게 50주고 자식이 auto */
+.item:nth-child(even){
+    margin-left: auto;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <title>Position Mini Example</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                background-color: #666;
+            }
+            .grand-father {
+                background-color: #bbb;
+                width: 800px;
+                margin: 0 auto;
+                padding: 1px;
+                position: relative;
+            }
+            .father {
+                background-color: white;
+                width: 300px;
+                height: 200px;
+                margin: 50px auto;
+                
+            }
+            .children {
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                /* 컨테이닝 블록만큼 가득차는게 변화가일어남 사용가능공간 축소 인라인아님 */
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+
+            .pos{
+                background-color: orange;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+            }
+
+            /* relative가 없으면 뷰포트 기준으로간다 */
+        </style>
+	</head>
+	<body>
+
+        <div class="grand-father">
+            <div class="father">
+                <img class="children" src="img.png">
+                <div class="pos">pos</div>
+            </div>
+        </div>
+       
+	</body>
+</html>
