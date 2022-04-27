@@ -28,29 +28,44 @@ body{
     font-size: 30px;
 }
 .minititle{
-    border-bottom: 3px solid #25559b;
+    border-bottom: 4px solid #25559b;
     padding-bottom: 20px;
-    margin-bottom: -12px;
+    margin-bottom: -20px;
     font-size: 16px;
 }
 
 .list-wrap{
     display: flex;
     flex-direction: column;
-    width: 1150px;
+    width: 1160px;
     margin: 100px auto;
+    position: relative;
 }
 
+.list-wrap::after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    background-color: #1c90ff;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 125px;
+    margin-bottom: -500px;
+
+}
 .photoshop{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     background-color: #111111;
     width: 550px;
-    min-height: 250px;
     border-radius: 20px;
     position: relative;
 }
 
-.photoshop:after
+.photoshop::after
 {
 content: '';
 position: absolute;
@@ -64,12 +79,31 @@ right: -15px;
 top: 50%;
 }
 
+.photoshop::before{
+    z-index: 9;
+    content: '';
+    position: absolute;
+    background-color: #222222;
+    border-radius: 50%;
+    border: 5px solid #1c90ff;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin-top: -10px;
+    right: -40px;
+    top: 50%;
+}
+
+.photoshop:nth-child(even):before{
+    left: -40px;
+}
+
+
 .photoshop img{
     width: 120px;
     height: 120px;
     margin-top: -40px;
     margin-left: 20px;
-
 }
 
 .photoshop:nth-child(even){
@@ -88,7 +122,7 @@ top: 50%;
     left: -15px;
 }
 .title-wrap{
-    margin: 20px 20px 0;
+    margin: 20px 20px 30px;
 }
 .year{
     font-size: 70px;
@@ -108,4 +142,23 @@ top: 50%;
 
 .photoshop:nth-child(odd) .version{
     text-align: right;
+}
+
+.listbox{
+    margin: 0 auto;
+    padding: 30px 60px;
+    background-color: black;
+    color: #999999;
+    width: 90%;
+    list-style-type: disc;
+    box-sizing: border-box;
+    border-radius: 30px 30px 0 0;
+    margin-top: auto;
+}
+
+.listbox li {
+    margin-bottom: 10px;
+}
+.listbox li:last-child{
+    margin-bottom: 0;
 }
