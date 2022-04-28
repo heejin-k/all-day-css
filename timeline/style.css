@@ -1,0 +1,115 @@
+/* css resets */
+body{
+    margin: 0;
+    padding: 0;
+}
+ol {
+    padding: 0;
+    list-style: none;
+}
+/* layouts */
+.wrapper{
+    border: 10px solid red;
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* components */
+.header {
+    background-color: orange;
+}
+
+body{
+    background-color: #999;
+}
+.main {
+    background-color: #999;
+    padding: 40px 0;
+}
+
+.timeline{
+    margin: 0 -30px;
+    position: relative;
+}
+
+.timeline-item::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 10px;
+    bottom: 0;
+    margin: 0 -5px;
+    background-color: dodgerblue;
+    transform: translateY(50%);
+}
+
+.timeline-item:nth-of-type(odd)::before{
+    right: 0;
+}
+
+.timeline-item:nth-of-type(even)::before{
+    left: 0;
+}
+
+.timeline-item{
+    margin-bottom: -130px;
+    width: 50%;
+    padding: 0 40px;
+    box-sizing: border-box;
+    outline: 1px solid purple;
+    position: relative;
+}
+
+.timeline-item::after{
+    content: '';
+    background-color: #222;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto -15px;
+    width: 30px;
+    height: 30px;
+    border: 6px solid dodgerblue;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+}
+
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+.timeline-item:nth-of-type(even){
+    margin-left: auto;
+}
+
+.timeline-item:nth-of-type(odd)::after{
+    right: 0;
+}
+
+.timeline-item:nth-of-type(even)::after{
+    left: 0;
+}
+
+.year {
+    background-color: #222;
+    color: white;
+    min-height: 400px;
+    position: relative;
+}
+
+.year::before {
+    content: 'wow';
+    background-color: #222;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    /* 상하단 0 주고 마진오토 줘도 가운데 정렬 가능 */
+    width: 50px;
+    height: 50px;
+    margin: auto -25px;
+
+}
+
+.year_left::before{ right: 0;}
+
+.year_right::before{ left: 0;}

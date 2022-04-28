@@ -15,7 +15,8 @@
 - flex와 함꼐 사용하기
   - flex로 가운데 정렬 한 상태에서 `margin-top : auto , margin-bottom : auto`을 주게 되면 사용 가능한 공간이 해당 요소에게 할당되어진다.
 
-<!-- ![image](https://user-images.githubusercontent.com/54096506/165565045-c9a1ca76-6745-49b9-af5b-5646fc4a3278.png) -->
+![image](https://user-images.githubusercontent.com/54096506/165565045-c9a1ca76-6745-49b9-af5b-5646fc4a3278.png)
+
 </details>
 
 <details>
