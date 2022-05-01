@@ -42,6 +42,44 @@
 
 ---
 
+## 22.04.28 day 2
+
+<details>
+<summary><b>과제 코드 리뷰 및 피드백</b></summary>
+<div markdown="1">
+
+- 반응형을 생각해서 만드는 것은 기본
+
+- 최대한 비슷하게 만들어라
+- list의 입력값이 많아졌을때 줄간격과 들여쓰기 유지해야할 것
+- 마크업을 완료한 후 스타일링 하는 것이 아닌, 큰 틀을 먼저 마크업 + 스타일링 하기
+
+</details>
+
+<details>
+<summary><b>CSS level up! tip</b></summary>
+<div markdown="1">
+
+- level up
+
+  - 1단계 : 디자인 완벽하게 구현하기 
+  - 2단계 : 입력값이 많아져도 디자인이 깨지지 않도록 만들기
+
+  - 3단계 : 디테일, 유지보수, 확장성 고려한 CSS 스타일링
+
+- 유연한 CSS 스타일링하기
+
+  - wrap을 활용할것. (빨간색 틀이 wrap)
+  - ![image](https://user-images.githubusercontent.com/54096506/166137342-c75be3a5-b47b-4423-85ec-88ef1ac69ed9.png)
+
+  - 헤더와 메인, 푸터 등의 가운데 정렬은 공통 클래스인 wrap으로 조절한다
+  - wrap은 고정값을주고, 안에 자식들은 wrap기준으로 퍼센트값을 넓이로 준다.
+  - 반응형의 경우 wrap의 넓이만 고치면 끝!
+
+</details>
+
+
+-----
 ## 과제 구현 결과물
 
 ![image](https://user-images.githubusercontent.com/54096506/165576869-1aeb8de5-3199-47a8-b096-1b49e7359c31.png)
