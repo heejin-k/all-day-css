@@ -57,4 +57,4 @@
 
 ### 페이지 링크
 
-https://heejin-k.github.io/all-day-css/challenges/timeline/
+https://heejin-k.github.io/all-day-css/Day1/challenges/timeline/
