@@ -1,0 +1,46 @@
+body, h1, h2 {
+    margin: 0;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+:root {
+    font-family: "arial";
+}
+
+body {
+    background-color: #ddd;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #eee;
+    margin-bottom: 20px;
+    padding: 20px 0;
+}
+
+.header-logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: orangered;
+}
+
+.section-container {
+    background-color: white;
+}
+
+.section-title {
+    font-size: 30px;
+}
+
+.section-contents {
+}

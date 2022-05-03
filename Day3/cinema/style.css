@@ -1,0 +1,49 @@
+body {
+    background-color: #111;
+    color: gray;
+}
+
+.rating {
+    background-image: url(./images/happy.png);
+    width: 240px;
+    height: 48px;
+    background-size: 240px 96px;
+    border: 3px solid blue;
+    overflow: hidden;
+
+}
+
+.rating::before {
+    content: ' ';
+    display: block;
+    /* background-color: orange; */
+    background-image: url(./images/happy.png);
+    background-position: left bottom;
+    background-size: 240px 96px;
+    width: 0px;
+    height: 48px;
+}
+
+.rating_50::before {
+    width: 100%;
+}
+
+.rating_45::before {
+    width: 90%;
+}
+
+.rating_40::before {
+    width: 80%;
+}
+
+.rating_30::before {
+    width: 60%;
+}
+
+.rating_20::before {
+    width: 40%;
+}
+
+.rating_10::before {
+    width: 20%;
+}
